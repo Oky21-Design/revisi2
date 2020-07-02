@@ -6519,7 +6519,11 @@ body > * {
     color: #fff; }
 
 .cover {
-  min-height: 100%; }
+  min-height: 100%;
+  background-image: url(https://pingendo.com/site-assets/cover.jpg);
+  background-position: top left;
+  background-size: 100%;
+  background-repeat: repeat; }
 
 .inset-shadowed {
   box-shadow: inset 0px 0px 45px #555; }
@@ -6570,11 +6574,7 @@ body > * {
     background: rgba(243, 243, 243, 0.75); }
 
 .section-parallax {
-  background-attachment: fixed;
-  background-image: url(assets/Image/qwe.jpeg);
-  background-position: top left;
-  background-size: 1000;
-  background-repeat: no-repeat; }
+  background-attachment: fixed; }
 
 .bg-aquamarine {
   background: linear-gradient(-30deg, rgba(79, 112, 206, 0.9) 0%, rgba(18, 187, 173, 0.9) 50%, rgba(18, 187, 173, 0.95) 100%);
@@ -6723,3 +6723,25 @@ body > * {
   background-position: top to bottom;
   background-size: 100%;
   background-repeat: no-repeat; }
+
+.section-overlapping {
+  margin-top: -100px; }
+
+.cover {
+  min-height: 125%; }
+  .cover .container {
+    height: 100vh; }
+
+.gradient-overlay {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)); }
